@@ -7,19 +7,22 @@ var nextbtn = document.getElementById('next');
 var firstnum = document.getElementById('multiplier');
 var answer = document.getElementById('ans');
 var secondnum = document.getElementById('multipliend');
+var rightAnsSound = document.getElementById("rightAnsSound"); 
+var wrongAnsSound = document.getElementById("wrongAnsSound"); 
+
 checkbtn.addEventListener("click",checkans);
 nextbtn.addEventListener("click",nextques);
 function checkans(){
-   
- 
-if(answer.value==(firstnum.innerText*secondnum.innerText))
+   if(answer.value==(firstnum.innerText*secondnum.innerText))
 {
-   
+    
+    rightAnsSound.play();
     response.innerHTML="Good Job "+ naam +" ✔️";
     response.style.color ="green";
 }
 else{
     
+    wrongAnsSound.play();
     response.innerHTML="AWAPS ❌ TRY AGAIN..";
     response.style.color ="red";
     rightanswer.innerText="Right answer is = "+firstnum.innerText*secondnum.innerText;
