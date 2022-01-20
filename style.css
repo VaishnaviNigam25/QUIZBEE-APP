@@ -1,5 +1,5 @@
 body {
-  background-image: url(/showcase.jpg);
+  background-image: url(./showcase.jpg);
   background-repeat:  no-repeat;
   color: black;
   background-attachment: fixed;
